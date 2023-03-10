@@ -3,4 +3,6 @@ from django.http import HttpResponse
 
 # Create your views here.
 def index(request):
-    return HttpResponse('<h1>This is a test page</h1>')
+    return render(request, '../templates/pages/index.html')
+def about(request):
+    return render(request, '../templates/pages/about.html')
